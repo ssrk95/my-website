@@ -17,7 +17,7 @@ function App(){
 
     return (
         <div className="mainDiv">
-            <Header switchContent={switchContent}/>
+            <Header currentPage={pageContent} switchContent={switchContent}/>
             <Content content={pageContent} switchContent={switchContent}/>
             <Footer/>
         </div>

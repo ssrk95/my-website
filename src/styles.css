@@ -66,6 +66,12 @@ body {
     color: #900000;
 }
 
+.headerCont .right-end .resume.selected,
+.headerCont .right-end .projects.selected,
+.headerCont .right-end .contact.selected{
+    color: #900000;
+}
+
 
 .contentCont{
     min-height: 70%;

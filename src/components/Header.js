@@ -1,7 +1,7 @@
 import Name from "./Name";
 import Role from "./Role";
 
-function Header({switchContent}){
+function Header({switchContent, currentPage}){
 
     const showIntro = e => {
         try{
@@ -18,9 +18,9 @@ function Header({switchContent}){
                 <Role role='React Developer'/>
             </div>
             <div className="right-end">
-                <div className="resume" onClick={() => switchContent('resume')}>Resume</div>
-                <div className="projects" onClick={() => switchContent('projects')}>Projects</div>
-                <div className="contact" onClick={() => switchContent('contact')}>Contact</div>
+                <div className={`resume ${currentPage === 'resume' ? 'selected' : ''}`} onClick={() => switchContent('resume')}>Resume</div>
+                <div className={`projects ${currentPage === 'projects' ? 'selected' : ''}`} onClick={() => switchContent('projects')}>Projects</div>
+                <div className={`contact ${currentPage === 'contact' ? 'selected' : ''}`} onClick={() => switchContent('contact')}>Contact</div>
             </div>
         </div>
     )
