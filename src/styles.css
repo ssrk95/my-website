@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+.mainDiv{
+    background-color: #ffffff;
+    height: 100vh;
+    overflow: auto;
+}
+
+.headerCont{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+.headerCont .left-end{
+    display: flex;
+    align-items: center;
+}
+.headerCont .left-end .role{
+    font-size: 16px;
+    margin-left: 30px;
+}
+.headerCont .left-end .nameCont{
+    display: flex;
+    cursor: pointer;
+}
+.headerCont .left-end .nameCont .circle{
+    width: 25px; 
+    height: 25px;
+    background-color: green; 
+    border-radius: 50%; 
+}
+.headerCont .left-end .nameCont .nameVal{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.headerCont .right-end{
+    display: flex;
+    align-items: center;
+}
+.headerCont .right-end .resume{
+    border-right: solid 1px #000000;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.headerCont .right-end .projects{
+    border-right: solid 1px #000000;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.headerCont .right-end .contact{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.headerCont .right-end .resume:hover,
+.headerCont .right-end .projects:hover,
+.headerCont .right-end .contact:hover{
+    color: #900000;
+}
+
+
+.contentCont{
+    min-height: 70%;
+}
+.contentCont.contact .header{
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.contentCont.contact .sub-header{
+    margin-left: 2px;
+    margin-bottom: 50px;
+}
+.contentCont.projects .header,
+.contentCont.resume .header{
+    font-weight: bold;
+    font-size: 42px;
+    margin-left: 230px;
+    margin-bottom: 50px;
+}
+.contentCont.contact .contactCont .lhs .emailDiv,
+.contentCont.contact .contactCont .lhs .phoneDiv{
+    margin-left: 2px;
+}
+.contentCont.contact .contactCont .lhs .emailDiv{
+    margin-top: 30px;
+}
+.contentCont.contact .contactCont .lhs .emailDiv .label,
+.contentCont.contact .contactCont .lhs .phoneDiv .label{
+    font-weight: bold;
+    font-size: 18px;
+}
+.contentCont.contact .contactCont .lhs .emailDiv .val,
+.contentCont.contact .contactCont .lhs .phoneDiv .val{
+    margin-top: 5px;
+}
+.contentCont.contact .contactCont .rhs .contactForm .submit{
+    width: 120px;
+    height: 120px;
+    background-color: #fdc100;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid 1px black;
+}
+.contentCont.contact .contactCont .rhs .contactForm .submit:hover{
+    background-color: #ffffff;
+}
+.contentCont.contact .contactCont .rhs .contactForm .submit span{
+    font-weight: bold;
+    font-size: 22px;
+}
+.contentCont.contact .contactCont .rhs .errorMsg{
+    margin-top: 20px;
+    color: red;
+}
+.contentCont.contact .contactCont .rhs .submitMsg{
+    margin-top: 20px;
+    color: green;
+}
+.contentCont.contact .contactCont .rhs .contactForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 25px;
+}
+.contentCont.contact .contactCont .rhs{
+    width: 50%;
+    padding-top: 50px;
+}
+.contentCont.contact .contactCont .rhs form .email.invalid input{
+    border: solid 2px red;
+}
+.contentCont.contact .contactCont .rhs form input{
+    margin-top: 5px;
+    height: 30px;
+    width: 200px;
+}
+.contentCont.contact .contactCont .rhs form .message textarea{
+    resize: none;
+    margin-top: 5px;
+}
+.contentCont.contact .contactCont .lhs,
+.contentCont.projects .projectsCont .lhs{
+    width: 50%;
+}
+.contentCont.projects .projectsCont .lhs .title{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+.contentCont.projects .projectsCont .lhs .desc{
+    width: 455px;
+    margin-bottom: 30px;
+}
+.contentCont.projects .projectsCont .lhs .desc ul li{
+    line-height: 1.6;
+}
+.contentCont.projects .projectsCont .lhs .codeRepo,
+.contentCont.projects .projectsCont .lhs .tryIt{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.contentCont.projects .projectsCont .lhs .codeRepo img,
+.contentCont.projects .projectsCont .lhs .tryIt img{
+    width: 30px;
+    height: 30px;
+}
+.contentCont.projects .projectsCont .lhs .codeRepo span,
+.contentCont.projects .projectsCont .lhs .tryIt span{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.contentCont.projects .projectsCont .rhs{
+    padding-left: 40px;
+}
+.contentCont.projects .projectsCont .rhs img{
+    width: 470px;
+    height: 313px;
+}
+.contentCont.contact .contactCont,
+.contentCont.projects .projectsCont,
+.contentCont.resume .resumeCont{
+    display: flex;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+.contentCont.resume .resumeCont .category{
+    font-weight: bold;
+    font-size: 26px;
+    width: 50%;
+}
+.contentCont.resume .resumeCont .details{
+    max-width: 50%;
+
+}
+.contentCont.resume .resumeCont .details.skills ol li{
+    line-height: 1.6;
+}
+.contentCont.resume .resumeCont .details .eduCont{
+    display: flex;
+}
+.contentCont.resume .resumeCont .details .eduCont .degree{
+    font-weight: bold;
+    margin-left: 25px;
+}
+.contentCont.resume .resumeCont .details .eduCont .degree span{
+    line-height: 1.6;
+    font-size: 18px;
+}
+.contentCont.resume .resumeCont .details .eduCont .fromTo{
+    min-width: 86px;
+    margin-top: 4px;
+}
+.contentCont.resume .resumeCont .details .expCont{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contentCont.resume .resumeCont .details .expCont .fromTo{
+    min-width: 81px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc{
+    margin-left: 25px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .role{
+    font-weight: bold;
+    font-size: 18px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .desc{
+    font-size: 16px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .desc ul li{
+    line-height: 1.6;
+}
+.contentCont.resume .resumeCont.work,
+.contentCont.resume .resumeCont.education{
+    border-bottom: solid 2px #ececec;
+}
+.contentCont.resume .resumeCont.education,
+.contentCont.resume .resumeCont.skills{
+    padding: 40px 0px;
+}
+
+.contentCont.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentCont .lhs{
+    padding-right: 15px;
+}
+.contentCont .rhs{
+    padding-left: 15px;
+}
+.contentCont .photoCont img{
+    width: 440px;
+    height: 440px;
+    border-radius: 220px;
+}
+.contentCont .greeting{
+    font-weight: bold;
+    font-size: 100px;
+}
+.contentCont .selfIntro{
+    max-width: 430px;
+    padding-left: 10px;
+}
+.contentCont .selfIntro p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contentCont .sections{
+    display: flex;
+    justify-content: space-between;
+}
+.contentCont .sections .btn{
+    width: 116px;
+    height: 116px;
+    border: solid 1px black;
+    border-radius: 58px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contentCont .sections .btn:hover {
+    background-color: #ffffff;
+}
+.contentCont .sections .btn span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.contentCont .sections .resume{
+    background-color: #FFAC1C;
+}
+.contentCont .sections .projects{
+    background-color: #ff0000;
+}
+.contentCont .sections .contact{
+    background-color: #9FE2BF;
+}
+
+
+
+.footerCont{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    border-top: solid 2px #ececec;
+}
+.footerCont .label{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footerCont .followMeCont .linkedIn{
+    height: 20px;
+    width: 20px;
+}
+.footerCont .followMeCont .linkedIn img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.footerCont .emailCont .value a{
+    text-decoration: none;
+}
