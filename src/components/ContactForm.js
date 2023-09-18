@@ -138,7 +138,7 @@ function ContactForm(){
                     />
                 </div>
                 <div className={`email ${isEmailValid ? '' : 'invalid'}`}>
-                    <label htmlFor="email">Email</label><br/>
+                    <label htmlFor="email">Email *</label><br/>
                     <input
                         type="text"
                         id="email"
