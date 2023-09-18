@@ -59,7 +59,7 @@ function ContactForm(){
                 firstName, lastName, email, subject, message
             });
 
-            const response = await fetch('http://localhost:3001/submitContactForm', {
+            const response = await fetch('https://ssrk-website-server.el.r.appspot.com/submitContactForm', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
