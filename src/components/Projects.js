@@ -1,10 +1,12 @@
 import ProjectDetails from "./ProjectDetails";
 import cmvSnap from '../images/cmv_snap.png';
+import mpwSnap from '../images/mpw_snap.png';
 
 function Projects({id}){
 
     const projectSnaps = {
-        'cmv' : cmvSnap
+        'cmv' : cmvSnap,
+        'mpw' : mpwSnap
     }
 
     return(

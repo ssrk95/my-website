@@ -4,7 +4,8 @@ import githubLogo from '../images/githubLogo.png'
 function ProjectDetails({id}){
 
     const projectTitles = {
-        'cmv' : "Cosmic Music Visualiser"
+        'cmv' : "Cosmic Music Visualiser",
+        'mpw' : "My personal website"
     }
 
     const projectDescriptions = {
@@ -16,6 +17,12 @@ function ProjectDetails({id}){
                     <li>
                         Dynamic audio visualization created with React, Web Audio API & HTML Canvas.
                     </li>
+                </ul>,
+        'mpw' : 
+                <ul>
+                    <li>
+                        This website was developed from scratch by me using React.js and Node.js 
+                    </li>
                 </ul>
     }
 
@@ -24,11 +31,12 @@ function ProjectDetails({id}){
     }
 
     const codeRepoLinks = {
-        'cmv' : 'https://github.com/ssrk95/music-visualiser'
+        'cmv' : 'https://github.com/ssrk95/music-visualiser',
+        'mpw' : 'https://github.com/ssrk95/my-website'
     }
 
     const showTryIt = id === 'cmv';
-    const showCodeRepo = id === 'cmv';
+    const showCodeRepo = id === 'cmv' || id === 'mpw';
 
     const handleTryIt = e =>{
         try{

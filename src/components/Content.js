@@ -37,6 +37,7 @@ function Content({content, switchContent}){
             {(content === 'projects' && 
                 <>
                 <div className="header">Personal Projects</div>
+                <Projects id='mpw'/>
                 <Projects id='cmv'/>
                 </>
             )}

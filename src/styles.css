@@ -198,6 +198,11 @@ body {
 .contentCont.projects .projectsCont .rhs img{
     width: 470px;
     height: 313px;
+    border: solid 1px black;
+}
+.contentCont.projects .projectsCont{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .contentCont.contact .contactCont,
 .contentCont.projects .projectsCont,
