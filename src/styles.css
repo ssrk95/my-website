@@ -343,11 +343,15 @@ body {
     margin-bottom: 8px;
 }
 
-.footerCont .followMeCont .linkedIn{
+.footerCont .followMeCont .links{
+    display: flex;
+    gap: 8px;
+}
+.footerCont .followMeCont .link{
     height: 20px;
     width: 20px;
 }
-.footerCont .followMeCont .linkedIn img{
+.footerCont .followMeCont .link img{
     height: 20px;
     width: 20px;
     cursor: pointer;
