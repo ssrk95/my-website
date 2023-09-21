@@ -199,6 +199,7 @@ body {
     width: 470px;
     height: 313px;
     border: solid 1px black;
+    border-radius: 8px;
 }
 .contentCont.projects .projectsCont{
     margin-bottom: 40px;
