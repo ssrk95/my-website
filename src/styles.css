@@ -35,6 +35,10 @@ body {
     background-color: green; 
     border-radius: 50%; 
 }
+.headerCont .left-end .nameCont .circle img{
+    width: 25px;
+    height: 25px;
+}
 .headerCont .left-end .nameCont .nameVal{
     margin-left: 8px;
     font-weight: bold;
@@ -44,6 +48,11 @@ body {
 .headerCont .right-end{
     display: flex;
     align-items: center;
+}
+.headerCont .right-end .home{
+    border-right: solid 1px #000000;
+    padding: 0px 10px;
+    cursor: pointer;
 }
 .headerCont .right-end .resume{
     border-right: solid 1px #000000;
@@ -60,12 +69,14 @@ body {
     cursor: pointer;
 }
 
+.headerCont .right-end .home:hover,
 .headerCont .right-end .resume:hover,
 .headerCont .right-end .projects:hover,
 .headerCont .right-end .contact:hover{
     color: #900000;
 }
 
+.headerCont .right-end .home.selected,
 .headerCont .right-end .resume.selected,
 .headerCont .right-end .projects.selected,
 .headerCont .right-end .contact.selected{
@@ -231,6 +242,16 @@ body {
     font-weight: bold;
     margin-left: 25px;
 }
+.contentCont.resume .resumeCont .details .eduCont .univLogo{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentCont.resume .resumeCont .details .eduCont .univLogo img{
+    width: 100px;
+    height: 50px;
+}
 .contentCont.resume .resumeCont .details .eduCont .degree span{
     line-height: 1.6;
     font-size: 18px;
@@ -249,8 +270,31 @@ body {
 .contentCont.resume .resumeCont .details .expCont .jobDesc{
     margin-left: 25px;
 }
-.contentCont.resume .resumeCont .details .expCont .jobDesc .role{
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company{
+    display: flex;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo{
+    margin-left: 15px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo.Animaker img{
+    width: 50px;
+    height: 50px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo.Zoho img{
+    width: 80px;
+    height: 40px;   
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo.MuSigma img{
+    width: 40px;
+    height: 40px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .info .name{
+    text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 8px;
+}
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .info .role{
+    font-style: italic;
     font-size: 18px;
 }
 .contentCont.resume .resumeCont .details .expCont .jobDesc .desc{

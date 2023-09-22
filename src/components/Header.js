@@ -18,6 +18,7 @@ function Header({switchContent, currentPage}){
                 <Role role='React Developer'/>
             </div>
             <div className="right-end">
+                <div className={`home ${currentPage === 'intro' ? 'selected' : ''}`} onClick={showIntro}>Home</div>
                 <div className={`resume ${currentPage === 'resume' ? 'selected' : ''}`} onClick={() => switchContent('resume')}>Resume</div>
                 <div className={`projects ${currentPage === 'projects' ? 'selected' : ''}`} onClick={() => switchContent('projects')}>Projects</div>
                 <div className={`contact ${currentPage === 'contact' ? 'selected' : ''}`} onClick={() => switchContent('contact')}>Contact</div>

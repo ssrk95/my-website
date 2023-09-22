@@ -1,3 +1,7 @@
+import animakerLogo from '../images/animakerLogo.png';
+import zohoLogo from '../images/zohoLogo.jpg';
+import muSigmaLogo from '../images/muSigmaLogo.jpg';
+
 function JobDescription({org}){
     
     const role = org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
@@ -34,9 +38,21 @@ function JobDescription({org}){
 
     const desc = org === 'Animaker' ? animakerDesc : org === 'Zoho' ? zohoDesc : org === 'MuSigma' ? muSigmaDesc : '';
 
+    const companyName = org === 'Animaker' ? 'Animaker Inc.' : org === 'Zoho' ? 'Zoho Corporation' : org === 'MuSigma' ? 'Mu Sigma Inc.' : '';
+
+    const companyLogo = org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
+
     return(
         <div className="jobDesc">
-            <div className="role">{role}</div>
+            <div className='company'>
+                <div className='info'>
+                    <div className="name">{companyName}</div>
+                    <div className="role">{role}</div>
+                </div>
+                <div className={`logo ${org}`}>
+                    <img src={companyLogo} alt='companyLogo'/>
+                </div>
+            </div>
             <div className="desc">{desc}</div>
         </div>
     )
