@@ -14,6 +14,9 @@ function JobDescription({org}){
                             <li>
                                 Built 20+ major features and several enhancements, prominent ones being <a style={{color: 'blue'}} href="https://new.animaker.com/introducing-presenter-view-on-animaker-deck-the-ultimate-feature-for-delivering-flawless-presentations-261346" target="_blank">Presenter View</a> | <b>Interactive Audio Fade settings in the timeline</b> | <b>Animaker 2.0 to 3.0 revamp features</b> | <b>Document intelligence features</b> | <b>New user onboard walkthrough</b> | <a style={{color: 'blue'}} href="https://new.animaker.com/say-bye-to-mouse-clicks!-hello-to-your-own-fingers!-introducing-touch-screen-enabled-animaker-for-laptops-and-monitors-244459" target="_blank">Touch functionality for the entire app</a>
                             </li>
+                            <li>
+                                Independently handled the frontend support for all payment related tasks for my team. This included implementing modern authorization mechanisms like OAuth.
+                            </li>
                         </ul>
 
     const zohoDesc = 
