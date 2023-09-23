@@ -10,7 +10,7 @@ function Details({section}){
                         <li>Javascript</li>
                         <li>CSS</li>
                         <li>HTML5</li>
-                        <li>HTML Canvas</li>
+                        <li>HTML Canvas / SVG</li>
                         <li>Web API</li>
                         <li>Immutable Js</li>
                         <li>Agile Development Process</li>
