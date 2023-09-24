@@ -232,6 +232,7 @@ body {
     max-width: 50%;
 
 }
+.contentCont.resume .resumeCont .details.achievements ul li,
 .contentCont.resume .resumeCont .details.skills ol li{
     line-height: 1.6;
 }
@@ -304,11 +305,13 @@ body {
     line-height: 1.6;
 }
 .contentCont.resume .resumeCont.work,
-.contentCont.resume .resumeCont.education{
+.contentCont.resume .resumeCont.education,
+.contentCont.resume .resumeCont.skills{
     border-bottom: solid 2px #ececec;
 }
 .contentCont.resume .resumeCont.education,
-.contentCont.resume .resumeCont.skills{
+.contentCont.resume .resumeCont.skills,
+.contentCont.resume .resumeCont.achievements{
     padding: 40px 0px;
 }
 

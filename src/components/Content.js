@@ -32,6 +32,7 @@ function Content({content, switchContent}){
                 <Resume section='work'/>
                 <Resume section='education'/>
                 <Resume section='skills'/>
+                <Resume section='achievements'/>
                 </>
             )}
             {(content === 'projects' && 
