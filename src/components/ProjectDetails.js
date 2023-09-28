@@ -1,21 +1,31 @@
 import reactLogo from '../images/reactLogo.png';
 import githubLogo from '../images/githubLogo.png'
 
-function ProjectDetails({id}){
+function ProjectDetails({id, handleTryIt}){
 
     const projectTitles = {
         'cmv' : "Cosmic Music Visualiser",
+        'evr' : "Easy Video Reversal",
         'mpw' : "My personal website"
     }
 
     const projectDescriptions = {
+        'evr' : 
+                <ul>
+                    <li>
+                        Upload your video and get the reversed video in seconds!
+                    </li>
+                    <li>
+                        Video reversal app created with React.js and Node.js
+                    </li>
+                </ul>,
         'cmv' : 
                 <ul>
                     <li>
                         Upload your favorite music and enjoy it's visualization in a cosmic setup!
                     </li>
                     <li>
-                        Dynamic audio visualization created with React, Web Audio API & HTML Canvas.
+                        Dynamic audio visualization created with React.js, Web Audio API & HTML Canvas.
                     </li>
                 </ul>,
         'mpw' : 
@@ -26,25 +36,14 @@ function ProjectDetails({id}){
                 </ul>
     }
 
-    const tryItLinks = {
-        'cmv' : 'https://ssrk95.github.io/music-visualiser/'
-    }
-
     const codeRepoLinks = {
+        'evr' : 'https://github.com/ssrk95/video-reversal',
         'cmv' : 'https://github.com/ssrk95/music-visualiser',
         'mpw' : 'https://github.com/ssrk95/my-website'
     }
 
-    const showTryIt = id === 'cmv';
-    const showCodeRepo = id === 'cmv' || id === 'mpw';
-
-    const handleTryIt = e =>{
-        try{
-            window.open(tryItLinks[id], '_blank');
-        }catch(err){
-            console.log('error in handleTryIt method in ProjectDetails component: ', err);
-        }
-    }
+    const showTryIt = id === 'evr' || id === 'cmv';
+    const showCodeRepo = id === 'evr' || id === 'cmv' || id === 'mpw';
 
     const openCodeRepo = e => {
         try{

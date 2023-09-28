@@ -211,6 +211,7 @@ body {
     height: 313px;
     border: solid 1px black;
     border-radius: 8px;
+    cursor: pointer;
 }
 .contentCont.projects .projectsCont{
     margin-bottom: 40px;
