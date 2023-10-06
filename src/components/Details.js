@@ -6,7 +6,7 @@ function Details({section}){
     const skills =
                     <ol>
                         <li>React</li>
-                        <li>Redux</li>
+                        <li>Redux (Flux architecture)</li>
                         <li>Javascript</li>
                         <li>CSS</li>
                         <li>HTML5</li>
@@ -19,6 +19,7 @@ function Details({section}){
                         <li>Github</li>
                         <li>Visual Studio Code</li>
                         <li>Jenkins (CI/CD)</li>
+                        <li>Ember Js</li>
                     </ol>
 
     const achievements =

@@ -5,7 +5,7 @@ import FollowMe from "./FollowMe";
 function Footer(){
     return(
         <div className="footerCont">
-            <Phone phoneNo={'+91-9840974436'}/>
+            <Phone phoneNo={'+91-9080934958'}/>
             <Email emailId={'gsriramsgkrishnan@gmail.com'}/>
             <FollowMe/>
         </div>

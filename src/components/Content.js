@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 
 function Content({content, switchContent}){
 
-    const phoneNo = '+91-9840974436';
+    const phoneNo = '+91-9080934958';
     const emailId = 'gsriramsgkrishnan@gmail.com';
 
     return(
