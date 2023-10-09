@@ -15,7 +15,7 @@ function Header({switchContent, currentPage}){
         <div className="headerCont">
             <div className="left-end">
                 <Name name='Sriram G' showIntro={showIntro}/>
-                <Role role='React Developer'/>
+                <Role role='Front-end developer'/>
             </div>
             <div className="right-end">
                 <div className={`home ${currentPage === 'intro' ? 'selected' : ''}`} onClick={showIntro}>Home</div>
