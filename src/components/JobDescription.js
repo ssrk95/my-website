@@ -1,10 +1,18 @@
+import expeditechLogo from '../images/expdLogo.png';
 import animakerLogo from '../images/animakerLogo.png';
 import zohoLogo from '../images/zohoLogo.jpg';
 import muSigmaLogo from '../images/muSigmaLogo.jpg';
 
 function JobDescription({org}){
     
-    const role = org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
+    const role = org === 'Expeditech' ? 'Front-end Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
+
+    const expeditechDesc = 
+                        <ul>
+                            <li>
+                                Leading a team of 4 front-end developers on an internal project.
+                            </li>
+                        </ul>
 
     const animakerDesc = 
                         <ul>
@@ -39,11 +47,11 @@ function JobDescription({org}){
                             </li>
                         </ul>
 
-    const desc = org === 'Animaker' ? animakerDesc : org === 'Zoho' ? zohoDesc : org === 'MuSigma' ? muSigmaDesc : '';
+    const desc = org === 'Expeditech' ? expeditechDesc : org === 'Animaker' ? animakerDesc : org === 'Zoho' ? zohoDesc : org === 'MuSigma' ? muSigmaDesc : '';
 
-    const companyName = org === 'Animaker' ? 'Animaker Inc.' : org === 'Zoho' ? 'Zoho Corporation' : org === 'MuSigma' ? 'Mu Sigma Inc.' : '';
+    const companyName = org === 'Expeditech' ? 'Expeditech Inc.' : org === 'Animaker' ? 'Animaker Inc.' : org === 'Zoho' ? 'Zoho Corporation' : org === 'MuSigma' ? 'Mu Sigma Inc.' : '';
 
-    const companyLogo = org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
+    const companyLogo = org === 'Expeditech' ? expeditechLogo : org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
 
     return(
         <div className="jobDesc">

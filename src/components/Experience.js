@@ -5,6 +5,11 @@ function Experience({org}){
         <div className="expCont">
             <div className="fromTo">
             {
+             org === 'Expeditech' ? 
+                                    <div>
+                                        <span>Jan 2024 - Present</span>
+                                    </div>
+                                :   
              org === 'Animaker' ? 
                                     <div>
                                         <span>May 2021 - Aug 2023</span>

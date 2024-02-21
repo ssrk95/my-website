@@ -7,8 +7,10 @@ function Details({section}){
                     <ol>
                         <li>React</li>
                         <li>Redux (Flux architecture)</li>
+                        <li>Next.js</li>
                         <li>Javascript</li>
-                        <li>CSS</li>
+                        <li>Typescript</li>
+                        <li>Custom CSS, Tailwind CSS</li>
                         <li>HTML5</li>
                         <li>HTML Canvas / SVG</li>
                         <li>Web API</li>
@@ -55,6 +57,7 @@ function Details({section}){
         <div className={`details ${section}`}>
          {(section === 'work' && 
                 <>
+                <Experience org='Expeditech'/>
                 <Experience org='Animaker'/>
                 <Experience org='Zoho'/>
                 <Experience org='MuSigma'/>

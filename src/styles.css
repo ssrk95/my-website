@@ -278,6 +278,10 @@ body {
 .contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo{
     margin-left: 15px;
 }
+.contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo.Expeditech img{
+    width: 50px;
+    height: 50px;
+}
 .contentCont.resume .resumeCont .details .expCont .jobDesc .company .logo.Animaker img{
     width: 50px;
     height: 50px;
