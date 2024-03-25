@@ -5,12 +5,12 @@ import muSigmaLogo from '../images/muSigmaLogo.jpg';
 
 function JobDescription({org}){
     
-    const role = org === 'Expeditech' ? 'Front-end Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
+    const role = org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
 
     const expeditechDesc = 
                         <ul>
                             <li>
-                                Leading a team of 4 front-end developers on an internal project.
+                                Leading a team of 4 frontend developers on an internal project.
                             </li>
                         </ul>
 

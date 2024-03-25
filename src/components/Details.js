@@ -16,7 +16,7 @@ function Details({section}){
                         <li>Web API</li>
                         <li>Immutable Js</li>
                         <li>Agile Development Process</li>
-                        <li>Atlassian Jira</li>
+                        <li>Atlassian Jira, Azure Devops</li>
                         <li>Gitlab</li>
                         <li>Github</li>
                         <li>Visual Studio Code</li>
