@@ -372,13 +372,13 @@ body {
     font-size: 18px;
 }
 .contentCont .sections .resume{
-    background-color: #FFAC1C;
+    background-color: #007BFF;
 }
 .contentCont .sections .projects{
-    background-color: #ff0000;
+    background-color: #FFC107;
 }
 .contentCont .sections .contact{
-    background-color: #9FE2BF;
+    background-color: #28A745;
 }
 
 

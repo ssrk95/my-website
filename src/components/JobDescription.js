@@ -10,7 +10,7 @@ function JobDescription({org}){
     const expeditechDesc = 
                         <ul>
                             <li>
-                                Leading a team of 4 frontend developers on an internal project.
+                            Leading a team of 3-4 frontend developers on an internal UEMS (Unified Endpoint Management System) product development project.
                             </li>
                         </ul>
 
