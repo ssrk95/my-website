@@ -1,8 +1,16 @@
 import JobDescription from "./JobDescription";
 
-function Experience({org}){
+function Experience({org, link}){
+
+    const handleExpClick = e => {
+        if (e.target.tagName === 'A') {
+            return;
+        }
+        window.open(link, '_blank')
+    }
+
     return(
-        <div className="expCont">
+        <div className="expCont" onClick={handleExpClick}>
             <div className="fromTo">
             {
              org === 'Expeditech' ? 

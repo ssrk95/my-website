@@ -239,6 +239,8 @@ body {
 }
 .contentCont.resume .resumeCont .details .eduCont{
     display: flex;
+    padding: 16px;
+    cursor: pointer;
 }
 .contentCont.resume .resumeCont .details .eduCont .degree{
     font-weight: bold;
@@ -262,9 +264,16 @@ body {
     min-width: 86px;
     margin-top: 4px;
 }
+.contentCont.resume .resumeCont .details .eduCont:hover,
+.contentCont.resume .resumeCont .details .expCont:hover{
+    background-color: #ede8e2;
+}
 .contentCont.resume .resumeCont .details .expCont{
     display: flex;
     margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 16px;
+    cursor: pointer;
 }
 .contentCont.resume .resumeCont .details .expCont .fromTo{
     min-width: 81px;

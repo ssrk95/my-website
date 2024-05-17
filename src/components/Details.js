@@ -57,10 +57,10 @@ function Details({section}){
         <div className={`details ${section}`}>
          {(section === 'work' && 
                 <>
-                <Experience org='Expeditech'/>
-                <Experience org='Animaker'/>
-                <Experience org='Zoho'/>
-                <Experience org='MuSigma'/>
+                <Experience org='Expeditech' link="https://www.expeditech.net/"/>
+                <Experience org='Animaker' link="https://www.animaker.com"/>
+                <Experience org='Zoho' link="https://www.manageengine.com/"/>
+                <Experience org='MuSigma' link="https://www.mu-sigma.com/"/>
                 </>
             )}
         {(section === 'education' && 
