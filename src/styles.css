@@ -281,6 +281,14 @@ body {
 .contentCont.resume .resumeCont .details .expCont .jobDesc{
     margin-left: 25px;
 }
+.contentCont.resume .resumeCont .details .expCont .jobDesc .skills div{
+    border: solid 1px black;
+    display: inline-block;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: khaki;
+}
 .contentCont.resume .resumeCont .details .expCont .jobDesc .company{
     display: flex;
 }
@@ -381,13 +389,13 @@ body {
     font-size: 18px;
 }
 .contentCont .sections .resume{
-    background-color: #007BFF;
+    background-color: #FF671F;
 }
 .contentCont .sections .projects{
-    background-color: #FFC107;
+    background-color: #4ABBF3;
 }
 .contentCont .sections .contact{
-    background-color: #28A745;
+    background-color: #3CB371;
 }
 
 

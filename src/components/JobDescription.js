@@ -53,6 +53,18 @@ function JobDescription({org}){
 
     const companyLogo = org === 'Expeditech' ? expeditechLogo : org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
 
+    const expeditechSkills = <><div>Next.js</div><div>Typescript</div><div>Html5</div><div>Tailwind Css</div><div>Agile Methodologies</div><div>Azure Devops</div><div>VS Code</div></>
+    
+    const animakerSkills = <><div>React.js</div><div>Redux</div><div>Javascript</div><div>Html5</div><div>Css3</div><div>Html Canvas</div><div>SVG</div><div>Web APIs</div><div>Immutable Js</div><div>Agile Methodologies</div><div>Atlassian Jira</div><div>Gitlab</div><div>Github</div><div>VS Code</div><div>Jenkins</div></>
+    
+    const zohoSkills = <><div>Ember.js</div><div>React.js</div><div>Javascript</div><div>Html5</div><div>Css3</div><div>Gitlab</div><div>VS Code</div></>
+    
+    const muSigmaSkills = <><div>Cosmos DB</div><div>Power BI</div></>
+
+    const skillsUsed = org === 'Expeditech' ? expeditechSkills : org === 'Animaker' ? animakerSkills : org === 'Zoho' ? zohoSkills : org === 'MuSigma' ? muSigmaSkills : ''; 
+
+    
+
     return(
         <div className="jobDesc">
             <div className='company'>
@@ -65,6 +77,7 @@ function JobDescription({org}){
                 </div>
             </div>
             <div className="desc">{desc}</div>
+            <div className="skills">{skillsUsed}</div>
         </div>
     )
 }

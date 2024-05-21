@@ -4,9 +4,9 @@ import githubLogo from '../images/githubLogo.png'
 function ProjectDetails({id, handleTryIt}){
 
     const projectTitles = {
-        'cmv' : "Cosmic Music Visualiser",
+        'cmv' : "Cosmic Music Visualizer",
         'evr' : "Easy Video Reversal",
-        'mpw' : "My personal website"
+        'mpw' : "My Portfolio Website"
     }
 
     const projectDescriptions = {
