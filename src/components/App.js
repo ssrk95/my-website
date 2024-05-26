@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Content from "./Content";
 import { useState } from "react";
+import ReactGA from 'react-ga4'
 
 function App(){
 
@@ -10,6 +11,11 @@ function App(){
     const switchContent = content => {
         try{
             setPageContent(content);
+            ReactGA.event({
+                category: 'Navigation',    
+                action: 'Menu Click',      
+                label: content          
+              });
         }catch(err){
             console.log('error in switchContent component in App.js: ', err);
         }
