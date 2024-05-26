@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Content from "./Content";
 import { useState } from "react";
-import ReactGA from 'react-ga4'
+import ReactGA from 'react-ga4';
 
 function App(){
 

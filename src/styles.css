@@ -264,6 +264,20 @@ body {
     min-width: 86px;
     margin-top: 4px;
 }
+.contentCont.resume .resumeCont .details .testimonialCont{
+    cursor: pointer;
+    width: 530px;
+    height: 180px;
+    padding: 10px;
+}
+.contentCont.resume .resumeCont .details .testimonialCont:hover{
+    outline: solid 1px black;
+    border-radius: 4px;
+}
+.contentCont.resume .resumeCont .details .testimonialCont img{
+    width: 100%;
+    height: 100%;
+}
 .contentCont.resume .resumeCont .details .eduCont:hover,
 .contentCont.resume .resumeCont .details .expCont:hover{
     background-color: #ede8e2;
@@ -327,10 +341,12 @@ body {
     line-height: 1.6;
 }
 .contentCont.resume .resumeCont.work,
+.contentCont.resume .resumeCont.testimonial,
 .contentCont.resume .resumeCont.education,
 .contentCont.resume .resumeCont.skills{
     border-bottom: solid 2px #ececec;
 }
+.contentCont.resume .resumeCont.testimonial,
 .contentCont.resume .resumeCont.education,
 .contentCont.resume .resumeCont.skills,
 .contentCont.resume .resumeCont.achievements{

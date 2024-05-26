@@ -1,5 +1,6 @@
 import Experience from "./Experience";
 import Education from "./Education";
+import Testimonial from "./Testimonial";
 
 function Details({section}){
 
@@ -61,6 +62,11 @@ function Details({section}){
                 <Experience org='Animaker' link="https://www.animaker.com"/>
                 <Experience org='Zoho' link="https://www.manageengine.com/"/>
                 <Experience org='MuSigma' link="https://www.mu-sigma.com/"/>
+                </>
+            )}
+        {(section === 'testimonial' && 
+                <>
+                <Testimonial/>
                 </>
             )}
         {(section === 'education' && 

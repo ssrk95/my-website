@@ -30,6 +30,7 @@ function Content({content, switchContent}){
                 <>
                 <div className="header">Resume</div>
                 <Resume section='work'/>
+                <Resume section='testimonial'/>
                 <Resume section='education'/>
                 <Resume section='skills'/>
                 <Resume section='achievements'/>

@@ -1,4 +1,5 @@
 import JobDescription from "./JobDescription";
+import ReactGA from 'react-ga4';
 
 function Experience({org, link}){
 
@@ -6,6 +7,11 @@ function Experience({org, link}){
         if (e.target.tagName === 'A') {
             return;
         }
+        ReactGA.event({
+            category: 'Interaction',    
+            action: 'Resume Section Click',      
+            label: org          
+          });
         window.open(link, '_blank')
     }
 

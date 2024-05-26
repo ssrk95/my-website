@@ -1,10 +1,16 @@
 import linkedInLogo from '../images/linkedinLogo.png';
 import githubLogo from '../images/githubLogo.png';
+import ReactGA from 'react-ga4';
 
 function FollowMe(){
 
     const redirectToLinkedIn = e => {
         try{
+            ReactGA.event({
+                category: 'Interaction',    
+                action: 'FollowMe Click',      
+                label: "LinkedIn"          
+              });
             window.open('https://www.linkedin.com/in/ssrk95/', '_blank');
         }catch(err){
             console.log('error in redirectToLinkedIn method in FollowMe component: ', err);
@@ -13,6 +19,11 @@ function FollowMe(){
 
     const redirectToGithub = e => {
         try{
+            ReactGA.event({
+                category: 'Interaction',    
+                action: 'FollowMe Click',      
+                label: "Github"          
+              });
             window.open('https://github.com/ssrk95', '_blank');
         }catch(err){
             console.log('error in redirectToGithub method in FollowMe component: ', err);
