@@ -58,6 +58,7 @@ function Details({section}){
         <div className={`details ${section}`}>
          {(section === 'work' && 
                 <>
+                <Experience org='Tcs' link="https://www.tcs.com/"/>
                 <Experience org='Expeditech' link="https://www.expeditech.net/"/>
                 <Experience org='Animaker' link="https://www.animaker.com"/>
                 <Experience org='Zoho' link="https://www.manageengine.com/"/>

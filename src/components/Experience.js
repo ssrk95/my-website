@@ -19,9 +19,14 @@ function Experience({org, link}){
         <div className="expCont" onClick={handleExpClick}>
             <div className="fromTo">
             {
+             org === 'Tcs' ? 
+                                    <div>
+                                        <span>Sep 2024 - Present</span>
+                                    </div>
+                                :
              org === 'Expeditech' ? 
                                     <div>
-                                        <span>Jan 2024 - Present</span>
+                                        <span>Jan 2024 - May 2024</span>
                                     </div>
                                 :   
              org === 'Animaker' ? 

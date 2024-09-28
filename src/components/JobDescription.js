@@ -1,3 +1,4 @@
+import tcsLogo from '../images/tcsLogo.png';
 import expeditechLogo from '../images/expdLogo.png';
 import animakerLogo from '../images/animakerLogo.png';
 import zohoLogo from '../images/zohoLogo.jpg';
@@ -5,12 +6,19 @@ import muSigmaLogo from '../images/muSigmaLogo.jpg';
 
 function JobDescription({org}){
     
-    const role = org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
+    const role = org === 'Tcs' ? 'IT Analyst (React Js Developer)' : org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
 
+    const tcsDesc = 
+                        <ul>
+                            <li>
+                            Working on a cloud migration project for a US based client.
+                            </li>
+                        </ul>
+    
     const expeditechDesc = 
                         <ul>
                             <li>
-                            Leading a team of 3-4 frontend developers on an internal UEMS (Unified Endpoint Management System) product development project.
+                            Led a team of 3-4 frontend developers on an internal UEMS (Unified Endpoint Management System) product development project.
                             </li>
                         </ul>
 
@@ -47,11 +55,11 @@ function JobDescription({org}){
                             </li>
                         </ul>
 
-    const desc = org === 'Expeditech' ? expeditechDesc : org === 'Animaker' ? animakerDesc : org === 'Zoho' ? zohoDesc : org === 'MuSigma' ? muSigmaDesc : '';
+    const desc = org === 'Tcs' ? tcsDesc : org === 'Expeditech' ? expeditechDesc : org === 'Animaker' ? animakerDesc : org === 'Zoho' ? zohoDesc : org === 'MuSigma' ? muSigmaDesc : '';
 
-    const companyName = org === 'Expeditech' ? 'Expeditech Inc.' : org === 'Animaker' ? 'Animaker Inc.' : org === 'Zoho' ? 'Zoho Corporation' : org === 'MuSigma' ? 'Mu Sigma Inc.' : '';
+    const companyName = org === 'Tcs' ? 'Tata Consultancy Services' : org === 'Expeditech' ? 'Expeditech Inc.' : org === 'Animaker' ? 'Animaker Inc.' : org === 'Zoho' ? 'Zoho Corporation' : org === 'MuSigma' ? 'Mu Sigma Inc.' : '';
 
-    const companyLogo = org === 'Expeditech' ? expeditechLogo : org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
+    const companyLogo = org === 'Tcs' ? tcsLogo : org === 'Expeditech' ? expeditechLogo : org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
 
     const expeditechSkills = <><div>Next.js</div><div>Typescript</div><div>Html5</div><div>Tailwind Css</div><div>Agile Methodologies</div><div>Azure Devops</div><div>VS Code</div></>
     
