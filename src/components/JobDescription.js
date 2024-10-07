@@ -6,14 +6,9 @@ import muSigmaLogo from '../images/muSigmaLogo.jpg';
 
 function JobDescription({org}){
     
-    const role = org === 'Tcs' ? 'IT Analyst (React Js Developer)' : org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
+    const role = org === 'Tcs' ? 'I.T. Analyst (React Js Developer)' : org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
 
-    const tcsDesc = 
-                        <ul>
-                            <li>
-                            Working on a cloud migration project for a US based client.
-                            </li>
-                        </ul>
+    const tcsDesc = ""
     
     const expeditechDesc = 
                         <ul>
