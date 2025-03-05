@@ -6,23 +6,19 @@ function Details({section}){
 
     const skills =
                     <ol>
-                        <li>React</li>
-                        <li>Redux (Flux architecture)</li>
-                        <li>Next.js</li>
-                        <li>Javascript</li>
-                        <li>Typescript</li>
+                        <li>React.js, Next.js</li>
+                        <li>Redux, Redux Toolkit</li>
+                        <li>HTML5, HTML Canvas / SVG</li>
                         <li>Custom CSS, Tailwind CSS</li>
-                        <li>HTML5</li>
-                        <li>HTML Canvas / SVG</li>
+                        <li>JavaScript, TypeScript</li>
                         <li>Web API</li>
-                        <li>Immutable Js</li>
+                        <li>Immutable.js</li>
                         <li>Agile Development Process</li>
-                        <li>Atlassian Jira, Azure Devops</li>
-                        <li>Gitlab</li>
-                        <li>Github</li>
+                        <li>Jira, Azure DevOps</li>
+                        <li>GitHub, GitLab</li>
                         <li>Visual Studio Code</li>
                         <li>Jenkins (CI/CD)</li>
-                        <li>Ember Js</li>
+                        <li>Ember.js</li>
                     </ol>
 
     const achievements =
@@ -47,7 +43,7 @@ function Details({section}){
                             Played for the school cricket team at the Cluster level in 2010.
                         </li>
                         <li>
-                            Editor and content manager of a <a style={{color: 'blue'}} href="https://www.facebook.com/siageonf" target="_blank">Facebook Page</a> (1.6K followers) and a <a style={{color: '#ff0000'}} href="https://www.youtube.com/channel/UCiMO35Kpjv9gS7rtUuMpSfQ" target="_blank">Youtube Channel</a> (1.2K subscribers).
+                            Editor and content manager of a <a style={{color: '#ff0000'}} href="https://www.youtube.com/channel/UCBn__5ZF59uV2jZzgIugQ5g" target="_blank">Youtube Channel</a> (4.17K subscribers).
                         </li>
                         <li>
                             Edited short films during college and presented them as part of the inter-college fests.

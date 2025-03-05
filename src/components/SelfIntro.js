@@ -3,11 +3,10 @@ function SelfIntro(){
     return(
         <div className="selfIntro">
             <p>
-                I'm a passionate Frontend developer with 3.5 years relevant experience, and an overall experience in the IT industry of nearly 5 years. 
-                Solid experience with React.js, Redux (Flux architecture), Next.js
+                I'm a Frontend developer with 4 years of experience, specializing in interactive UI and transforming complex requirements into elegant, user-friendly solutions.            
             </p>
             <p>
-                Building fascinating UI and ardent problem solving make my day.
+                Proficient in React.js, Redux and Next.js.
             </p>
         </div>
     )

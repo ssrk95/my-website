@@ -8,7 +8,9 @@ function JobDescription({org}){
     
     const role = org === 'Tcs' ? 'I.T. Analyst (React Js Developer)' : org === 'Expeditech' ? 'Senior Frontend Developer' : org === 'Animaker' ? 'React Developer' : org === 'Zoho' ? 'Member of Technical Staff' : org === 'MuSigma' ? 'Trainee Decision Scientist' : '';
 
-    const tcsDesc = ""
+    const tcsDesc = <ul>
+                        <li>Engineered scalable UI components with React.js, Redux Toolkit, and TypeScript, implementing form validation, user input handling, and optimizing UI responsiveness.</li>
+                    </ul>
     
     const expeditechDesc = 
                         <ul>
@@ -20,33 +22,38 @@ function JobDescription({org}){
     const animakerDesc = 
                         <ul>
                             <li>
-                                Part of the core Animaker App team, building features simplifying the process of video making, delivering value for over 15 Million users.
+                                Independently developed and delivered 20+ major features for the Animaker App, enhancing the video making experience for 15 Million+ users.
                             </li>
                             <li>
-                                Built 20+ major features and several enhancements, prominent ones being <a style={{color: 'blue'}} href="https://new.animaker.com/introducing-presenter-view-on-animaker-deck-the-ultimate-feature-for-delivering-flawless-presentations-261346" target="_blank">Presenter View</a> | <b>Interactive Audio Fade settings in the timeline</b> | <b>Animaker 2.0 to 3.0 revamp features</b> | <b>Document intelligence features</b> | <b>New user onboard walkthrough</b> | <a style={{color: 'blue'}} href="https://new.animaker.com/say-bye-to-mouse-clicks!-hello-to-your-own-fingers!-introducing-touch-screen-enabled-animaker-for-laptops-and-monitors-244459" target="_blank">Touch functionality for the entire app</a>
+                                Prominent features include
+                                <ul>
+                                    <li><a style={{color: 'blue'}} href="https://new.animaker.com/introducing-presenter-view-on-animaker-deck-the-ultimate-feature-for-delivering-flawless-presentations-261346" target="_blank">Presenter View</a> - Enabled seamless dual screen control,
+                                    significantly improving presentation flow and user interaction.
+                                    This feature was recognized as the <b>"ultimate feature"</b> for
+                                    delivering flawless presentations.</li>
+                                    <li><a style={{color: 'blue'}} href="https://new.animaker.com/say-bye-to-mouse-clicks!-hello-to-your-own-fingers!-introducing-touch-screen-enabled-animaker-for-laptops-and-monitors-244459" target="_blank">Touch functionality for the entire app</a> - Optimized Animaker for
+                                    50+ touchscreen laptops, enhancing accessibility for creators.</li>
+                                    <li><b>Document Intelligence Features</b> – Bulk editing tools reducing
+                                    the editing time by over 90%. Hailed as a <b>“game changer”</b> by
+                                    the Sales Head.</li>
+                                </ul>
                             </li>
                             <li>
-                                Independently handled the frontend support for all payment related tasks for my team. This included implementing modern authorization mechanisms like OAuth.
+                                Independently handled frontend support for all payment related tasks. Implemented modern authorization mechanisms like OAuth, facilitating secure user authentication.
                             </li>
                         </ul>
 
     const zohoDesc = 
                         <ul>
                             <li>
-                                Worked on the Client-side development of “Manage Engine - Desktop Central, which is a division of Zoho Corporation.
-                            </li>
-                            <li>
-                                Client-side development involved UI migration from the then existing Struts framework to Ember framework.
+                                Worked on frontend development for ManageEngine - Desktop Central, primarily focusing on UI migration from Struts to Ember.js.
                             </li>
                         </ul>
 
     const muSigmaDesc = 
                         <ul>
                             <li>
-                                Worked on the analysis and performance of a commonly used chat based workspace.
-                            </li>
-                            <li>
-                                Gathered usage statistics in Cosmos DB and performed analytics and dash-boarding on top of it.
+                                Analyzed chat based workspace performance, leveraging Cosmos DB for data analytics & dashboarding.
                             </li>
                         </ul>
 
@@ -56,7 +63,9 @@ function JobDescription({org}){
 
     const companyLogo = org === 'Tcs' ? tcsLogo : org === 'Expeditech' ? expeditechLogo : org === 'Animaker' ? animakerLogo : org === 'Zoho' ? zohoLogo : org === 'MuSigma' ? muSigmaLogo : null;
 
-    const expeditechSkills = <><div>Next.js</div><div>Typescript</div><div>Html5</div><div>Tailwind Css</div><div>Agile Methodologies</div><div>Azure Devops</div><div>VS Code</div></>
+    const tcsSkills = <><div>React.js</div><div>Redux Toolkit</div><div>Typescript</div><div>Html5</div><div>Css3</div><div>Prime React UI</div><div>Agile Process</div><div>Jira</div><div>Github</div><div>VS Code</div></>
+
+    const expeditechSkills = <><div>Next.js</div><div>Typescript</div><div>Html5</div><div>Tailwind Css</div><div>Radix UI</div><div>Agile Methodologies</div><div>Azure Devops</div><div>VS Code</div></>
     
     const animakerSkills = <><div>React.js</div><div>Redux</div><div>Javascript</div><div>Html5</div><div>Css3</div><div>Html Canvas</div><div>SVG</div><div>Web APIs</div><div>Immutable Js</div><div>Agile Methodologies</div><div>Atlassian Jira</div><div>Gitlab</div><div>Github</div><div>VS Code</div><div>Jenkins</div></>
     
@@ -64,7 +73,7 @@ function JobDescription({org}){
     
     const muSigmaSkills = <><div>Cosmos DB</div><div>Power BI</div></>
 
-    const skillsUsed = org === 'Expeditech' ? expeditechSkills : org === 'Animaker' ? animakerSkills : org === 'Zoho' ? zohoSkills : org === 'MuSigma' ? muSigmaSkills : ''; 
+    const skillsUsed = org === 'Tcs' ? tcsSkills : org === 'Expeditech' ? expeditechSkills : org === 'Animaker' ? animakerSkills : org === 'Zoho' ? zohoSkills : org === 'MuSigma' ? muSigmaSkills : ''; 
 
     
 
